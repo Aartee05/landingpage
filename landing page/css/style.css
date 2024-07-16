@@ -1,0 +1,161 @@
+:root{
+    --marron: #973131;
+    --sandle: #E0A75E;
+    --lights: #F9D689;
+    --peach:  #F5E7B2;
+}
+
+
+
+
+body,h2{
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.landing{
+    background-image: url("https://www.chennaispice.com/wp-content/uploads/2021/04/Untitled-design-15.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color:var(--peach);
+}
+
+header a{
+    text-decoration: none;
+    color:rgb(174, 214, 94);
+    min-width: 100px;
+}
+
+header{
+    display: flex;
+    padding: 1em;
+    flex-wrap: wrap;
+    row-gap: 15px;
+}
+
+#logo{
+    flex: 3;
+    font-size: 25px;
+    min-width: 250px;
+}
+
+nav{
+    flex: 2;
+    display: flex;
+    align-items: center;
+
+}
+
+nav a{
+    flex: 1;
+}
+
+nav a:hover{
+    color:var(--lights);
+}
+
+header h2 i,nav a i{
+    margin-right: .5em;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    justify-content: center;
+    padding: 2em;
+}
+
+.tag1{
+    color: var(--sandle);
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+.tag2{
+    color:#f6aa77;
+    font-size: 20px;
+
+}
+
+.main div{
+    margin-top:8px;
+}
+
+.main button{
+    width: 150px;
+    margin-top: 30px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #EF9C66;
+    border: 2px solid #EF9C66;
+}
+
+.menu{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+    background:linear-gradient(to right,rgb(54, 54, 54),rgb(38, 36, 36));
+    color: var(--peach);
+
+}
+#menuhead,#lochead{
+    background: linear-gradient(to right,rgb(54,54,54),rgb(38,36,36));
+    font-size: 40px;
+    color: var(--sandle);
+    display: flex;
+    justify-content: center;
+}
+
+.menu th{
+    color: rgb(145, 57, 66);
+    font-size: 25px;
+    
+}
+
+table{
+    width: 100%;
+    padding: 1em;
+}
+
+.menu tr{
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.menu td:nth-child(1){
+    flex: 1;
+    justify-self: left;
+}
+
+.menu td:nth-child(2){
+    justify-self: right;
+}
+.maincourse{
+    grid-row: span 2;
+}
+
+.locations{
+    background: linear-gradient(to right,rgb(54,54,54),rgb(38,36,36));
+    color: var(--peach);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.locations h2{
+    color: rgb(145, 57, 66);
+    margin-bottom: 20px;
+}
+
+.locations div{
+    flex: 1;
+    padding: 20px;
+    min-width: 150px;
+}
+
+footer{
+    background-color: rgb(30, 33, 34);
+    color: white;
+    padding: 5px 12px;
+}
